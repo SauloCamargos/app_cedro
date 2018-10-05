@@ -1,0 +1,14 @@
+<div class="wrapper-subscribe-term-dialog">
+    <button mat-button class="dialog-close" (click)="closeDialog()">
+      <i class="fa fa-times"></i>
+    </button>
+  <h1>Termo</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus aperiam quo sed rerum cupiditate, eum dignissimos quis, recusandae laboriosam sint ipsa eligendi exercitationem nostrum vel necessitatibus officia ipsum blanditiis?
+  </p>
+  <hr>
+  <section class="action-section">
+      <mat-checkbox [(ngModel)]="allowedTerms">Li e aceito os termos e condições acima</mat-checkbox>      
+      <button [disabled]="!allowedTerms" (click)="goToFinish()" mat-raised-button color="primary">Ok, entendi!</button>
+  </section>
+</div>

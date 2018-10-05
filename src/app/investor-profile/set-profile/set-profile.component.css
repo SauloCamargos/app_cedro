@@ -1,0 +1,29 @@
+.question{
+    text-align: center;
+    font-size: 15px;
+    margin: 40px 0px 25px;
+}
+
+.wrapper-question{
+    border-bottom: 3px dashed #c5c5c5;
+    padding-bottom: 40px;
+}
+
+.mat-form-field {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.wrapper-actions button{
+    margin: 10px;
+}
+
+.wrapper-actions {
+    margin-bottom: 45px;
+}
+
+.mat-spinner{
+    margin: 0px auto;
+}

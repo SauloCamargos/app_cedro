@@ -1,0 +1,22 @@
+.wrapper-subscribe-term-dialog{
+    text-align: center !important;
+    position: relative;
+}
+
+.dialog-close {
+    width: auto !important;
+    min-width: initial;
+    position: absolute;
+    top: -45px;
+    right: -24px;
+}
+
+.action-section button{
+    display: inline-block;
+    width: 100%;
+}
+.action-section button,
+.action-section mat-checkbox{
+    margin-top: 15px;
+    
+}

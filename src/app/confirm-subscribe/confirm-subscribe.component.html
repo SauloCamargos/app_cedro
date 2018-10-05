@@ -1,0 +1,44 @@
+
+<div class="container wrapper-confirmation-page">
+
+
+<div class="alert alert-success alert-dismissible" role="alert">    
+    <strong>Parabéns!</strong>
+    <p>
+      Seu cadastro foi realizado com sucesso!
+    </p>
+</div>
+
+
+<div *ngIf="formsControlsValues" class="wrapper-questions well">
+  <h3 class="title-section">
+    Dados do investidor:
+  </h3>
+  <div  *ngFor="let item of formsControlsValues; let index = index ">    
+    <div *ngIf="item.type == 1" class="wrapper-question wrapper-question-1">
+      <h4 class="question">
+          {{index+1}} - {{item.question}}
+        </h4>
+        <p class="response">
+          {{item.response}}
+        </p> 
+      </div>
+      
+      <div *ngIf="item.type == 2" class="wrapper-question wrapper-question-2">
+        <h4 class="question">
+          {{index+1}} - {{item.question}}
+        </h4>
+        <div class="row">
+          <div class="col-md-6" *ngFor="let subItem of item.topicos">
+              <h4 class="question">
+                {{subItem.label}}
+              </h4>
+              <p class="response">                
+                {{subItem.response}}
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
